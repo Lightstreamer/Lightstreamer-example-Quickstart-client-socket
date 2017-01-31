@@ -1,9 +1,9 @@
-# Lightstreamer - Quickstart Example - TCP Sockets Client #
+# Lightstreamer - Quickstart Example - HTTP clients #
 <!-- START DESCRIPTION lightstreamer-example-quickstart-client-socket -->
 
-In this tutorial, we'll show a client that communicates with the Lightstreamer Server through plain **TCP sockets**, instead of leveraging one of the available Client Libraries.
+In this tutorial, we'll show a client that communicates with the Lightstreamer Server through **direct HTTP requests**, instead of leveraging one of the available Client Libraries.
 
-The rationale for this is to enable the development of clients based on any technology. This way, it is possible receive real-time updates from Lightstreamer Server from programs written in **C, PHP, Ruby,** or any other language that allows client **TCP socket programming**.
+The rationale for this is to enable the development of clients based on any technology. This way, it is possible receive real-time updates from Lightstreamer Server from programs written in **C, PHP, Ruby,** or any other language that allows **direct HTTP requests**.
 
 This tutorial provides instructions to interact with the [Lightstreamer - Basic Chat Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-Chat-adapter-java).
 
