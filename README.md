@@ -51,7 +51,7 @@ Note that it is a single line.
 
 The response from the Server looks like the following:
 ```cmd
-CONOK,__Sa5268cc2d401967bT4311553__,50000,5000,*
+CONOK,Sa5268cc2d401967bT4311553,50000,5000,*
 SERVNAME,Lightstreamer HTTP Server
 CLIENTIP,0:0:0:0:0:0:0:1
 NOOP,sending placeholder data
@@ -65,7 +65,7 @@ PROBE
 ```
 
 The response contains:
-* The CONOK response, with the session ID (shown in bold), request limit, keep alive time and control link.
+* The CONOK response, with the session ID, request limit (50000), keep alive time (5000), and control link (not defined).
 * The SERVNAME notification, with the name of the Server.
 * The CLIENTIP notification, with the client IP.
 * Some NOOP notifications (the majority are omitted), needed to fill up the receive buffer of the client.
@@ -92,7 +92,7 @@ So, on a separate command line, let’s subscribe to an item using a request wit
 
 Here is the complete call with cURL:
 ```cmd
-curl -v -N -X POST -d "LS_op=add&LS_subId=1&LS_data_adapter=CHAT_ROOM&LS_group=chat_room&LS_schema=timestamp%20message&LS_mode=DISTINCT&LS_session=__<session-ID>__&LS_reqID=1" http://push.lightstreamer.com/lightstreamer/control.txt?LS_protocol=TLCP-2.0.0
+curl -v -N -X POST -d "LS_op=add&LS_subId=1&LS_data_adapter=CHAT_ROOM&LS_group=chat_room&LS_schema=timestamp%20message&LS_mode=DISTINCT&LS_session=__<session-ID>__&LS_reqId=1" http://push.lightstreamer.com/lightstreamer/control.txt?LS_protocol=TLCP-2.0.0
 ```
 Recall that it is a single line. Put the session ID of your session where appropriate (bold part).
 
