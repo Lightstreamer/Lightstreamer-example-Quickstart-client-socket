@@ -20,7 +20,7 @@ Its workflow is relatively simple:
 
 *Note: When you send a message through our online Server, your IP address is publicly displayed.*
 
-The interaction leverages Lightstreamer protocol for generic clients, known as TLCP. The full specification is available in the [TLCP Specification.pdf](https://www.lightstreamer.com/docs/client_TLCP_base/TLCP%20Specifications.pdf) document.
+The interaction leverages Lightstreamer protocol for generic clients, known as TLCP. The full specification is available in the [TLCP Specification.pdf](https://lightstreamer.com/api/ls-generic-client/latest/TLCP%20Specifications.pdf) document.
 This protocol is available for both HTTP-request-based and WebSocket transport.
 In this tutorial, only the HTTP case is shown, leaning on the **cURL** tool for the manual submission of HTTP requests.
 **cURL** is a widespread command-line utility used to test HTTP requests and responses. It is available for most operating systems and can be downloaded at: [https://curl.haxx.se](https://curl.haxx.se)
